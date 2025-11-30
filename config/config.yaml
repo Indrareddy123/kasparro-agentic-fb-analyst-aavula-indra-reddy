@@ -1,0 +1,19 @@
+data:
+  path: "data/sample_fb_ads.csv"
+  date_column: "date"
+  date_format: "%Y-%m-%d"
+
+metrics:
+  roas_drop_threshold: 0.2
+  ctr_low_threshold: 0.015
+  min_impressions_for_analysis: 500
+
+analysis:
+  time_window_days: 30
+  baseline_window_days: 30
+
+output:
+  insights_path: "reports/insights.json"
+  creatives_path: "reports/creatives.json"
+  report_path: "reports/report.md"
+  logs_dir: "logs"
